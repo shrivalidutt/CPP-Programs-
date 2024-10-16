@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int chocolateFeast(int n, int c, int m) {
-    int count{},x,a;
+    int count = 0;
+    int x = 0;
     count=n/c;
     x=count;
 while(x>=m) {
