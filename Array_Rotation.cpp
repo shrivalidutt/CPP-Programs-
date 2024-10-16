@@ -2,7 +2,7 @@
 using namespace std;
 void once_rotation(float arr[], int no_elements)
 {
-    int flag = arr[0];
+    float flag = arr[0];
     for (int i = 0; i < no_elements - 1; i++)
     {
         arr[i] = arr[i + 1];
@@ -10,7 +10,7 @@ void once_rotation(float arr[], int no_elements)
 
     arr[no_elements - 1] = flag;
 }
-float rotate_array(float arr[], int no_elements, int no_rotations)
+void rotate_array(float arr[], int no_elements, int no_rotations)
 {
     float flag = 0;
     if (no_elements == 0)
@@ -37,7 +37,6 @@ float rotate_array(float arr[], int no_elements, int no_rotations)
         cout << endl;
     }
 
-    return 0;
 }
 int main()
 {
